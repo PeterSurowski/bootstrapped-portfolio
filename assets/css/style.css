@@ -1,6 +1,7 @@
 html {
 	position: relative;
 	min-height: 700px;
+	
 }
 
 /* PROBLEM: I can't get the bottom border to appear. */
@@ -18,10 +19,11 @@ header {
 
 /* PROBLEM: I can't seem to get the background image to appear. */;
 body {
-	color: #777777;
-	background-image: url("assets/images/ep_naturalwhite.png");
+	color: #777777;	
 	margin: 0 0 100px;
 	min-height: 1000px;
+	background-image: url(assets/images/ep_naturalwhite.png);
+	
 }
 
 .clearfix {
