@@ -1,10 +1,7 @@
 html {
 	position: relative;
-	min-height: 700px;
-	
-}
+	}
 
-/* PROBLEM: I can't get the bottom border to appear. */
 header {
 	background: #ffffff;
 	position: fixed;
@@ -17,13 +14,10 @@ header {
 	border-bottom: 2px solid #cccccc;
 }
 
-/* PROBLEM: I can't seem to get the background image to appear. */;
 body {
 	color: #777777;	
-	margin: 0 0 100px;
-	min-height: 1000px;
-	background-image: url(assets/images/ep_naturalwhite.png);
-	
+	min-height: 800px;
+	background-image: url(../images/ep_naturalwhite.png);
 }
 
 .clearfix {
@@ -56,17 +50,38 @@ body {
 	margin: 0;
 	vertical-align: middle;
 	position: fixed;
-	right: 40px;
-	font-size: 16px;
-	font-family: Arial;
-	color: #777777;
+	right: 40px;	
 	padding: 40px 10px 34px 10px;
 	background: #ffffff;
 	z-index: 2;
 }
 
-li {
+#menu li {
 	display: inline;
+	font-size: 16px;
+	font-family: Arial;
+	color: #d3d3d3;
+}
+
+#menu a {
+	text-decoration: none;
+}
+
+#menu a:link {
+	color: #777777;
+}
+
+#menu a:visited {
+	color: gray; 
+}
+
+#menu a:hover {
+	color: #4aaaa5;
+}
+
+#menu a:active {
+	color: gray;
+	font-weight: bold;
 }
 
 #left-home {
@@ -100,7 +115,6 @@ li {
 	margin-bottom: 10px;
 }
 
-/* PROBLEM: I can't get the nav bar font to change from a purple color or an underline. */
 #right {
 	background: #ffffff;
 	padding: 20px;
@@ -118,10 +132,11 @@ li {
 	color: #4aaaa5;
 	font-family: Georgia;
 	margin-bottom: 15px;
+	text-align: center;
 }
 
 #right .fa {
-	color: black;
+	color: #777777;
 	background: white;
 	font-size: 40px;
 	margin: 3px;
@@ -144,13 +159,10 @@ footer {
 	background: #666666;
 	height: 50px;
 	width: 100%;
-	margin-top: 10px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	border-style: solid 
-	border-color: #4aaaa5;
-	border-width: 5px 0px 0px 0px;
+	border-top: solid #4aaaa5 3px;
 }
 
 footer p {
@@ -158,25 +170,7 @@ footer p {
 	font-size: 12px;
 	padding-top: 25px;
 	color: #999;
-}
-
-/*The following lines describe how a link in text will work. */
-a:link {
-	color: blue;
-}
-
-a:visited {
-	color: purple; 
-}
-
-a:hover {
-	color: #4aaaa5;
-}
-
-a:active {
-	color: gray;
-	font-weight: bold;
-}
+}	
 
 /* The following styles the portfolio page. */
 
@@ -199,8 +193,6 @@ a:active {
 	color: #4aaaa5;
 	font-family: Georgia;
 }
-
-/* PROBLEM: Despite that the code is identical for #images 1-5, for some reason the teal banner on #image-5 looks like it has more bottom padding. */
 
 #image-1, #image-2, #image-3, #image-4, #image-5 {
 	height: 100px;
@@ -239,6 +231,10 @@ a:active {
 	padding: 5px;
 }
 
+#image-1:hover, #image-2:hover, #image-3:hover, #image-4:hover, #image-5:hover {
+	filter: grayscale(.6);
+}
+
 /* The following lines style the contact page. */
 
 #left-contact h1 {
@@ -265,4 +261,8 @@ a:active {
 	font-family: Arial;
 	padding: 3px 0px 3px 0px;
 	font-size: 14px;
+}
+
+input {
+	padding: 5px;
 }
