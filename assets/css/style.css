@@ -1,0 +1,266 @@
+html {
+	position: relative;
+	min-height: 700px;
+}
+
+/* PROBLEM: I can't get the bottom border to appear. */
+header {
+	background: #ffffff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 80px;
+	width: 100%;
+	z-index: 1;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #cccccc;
+}
+
+/* PROBLEM: I can't seem to get the background image to appear. */;
+body {
+	color: #777777;
+	background-image: url("assets/images/ep_naturalwhite.png");
+	margin: 0 0 100px;
+	min-height: 1000px;
+}
+
+.clearfix {
+	clear: both;
+	content: ".";
+	display: block;
+	line-height: 0;
+	border-style: solid;
+	border-color: #cccccc;
+	border-width: 0px 0px 2px 0px;
+}
+
+#surowski {
+	color: white;
+	background: #4aaaa5;
+	font-weight: bold;
+	font-family: Georgia;
+	font-size: 30px;
+	padding: 40px 15px 25px 15px;
+	width: 240px;
+	height: 15px;
+	float: left;
+	position: fixed;
+	left: 80px;
+	z-index: 2;	
+}
+
+#menu {
+	list-style-type: none;
+	margin: 0;
+	vertical-align: middle;
+	position: fixed;
+	right: 40px;
+	font-size: 16px;
+	font-family: Arial;
+	color: #777777;
+	padding: 40px 10px 34px 10px;
+	background: #ffffff;
+	z-index: 2;
+}
+
+li {
+	display: inline;
+}
+
+#left-home {
+	clear: both;
+	background: #ffffff;
+	margin: 40px 20px 20px 20px;
+	padding: 20px;
+	position: absolute;
+	top: 80px;
+	left: 60px;
+	width: 40%;
+	font-size: 18px;
+	border: solid #dddddd 1px;
+}
+
+#left-home h1 {
+	font-size: 25px;
+	font-weight: bold;
+	color: #4aaaa5;
+	font-family: Georgia;
+}
+
+#profile-pic {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-right: 15px;
+}
+
+#left-home p {
+	margin-bottom: 10px;
+}
+
+/* PROBLEM: I can't get the nav bar font to change from a purple color or an underline. */
+#right {
+	background: #ffffff;
+	padding: 20px;
+	width: 20%;
+	position: absolute;
+	top: 100px;
+	left: 60%;
+	margin: 20px 20px 20px 20px;
+	border: solid #dddddd 1px;
+}
+
+#right h2 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #4aaaa5;
+	font-family: Georgia;
+	margin-bottom: 15px;
+}
+
+#right .fa {
+	color: black;
+	background: white;
+	font-size: 40px;
+	margin: 3px;
+	padding: 2px;
+	height: 40px;
+	width: 40px;
+	border-radius: 25px;
+}
+
+#right .fa:hover {
+	background: #4aaaa5;
+}
+
+#right p {
+	text-align: center;
+}
+
+footer {
+	clear: both;
+	background: #666666;
+	height: 50px;
+	width: 100%;
+	margin-top: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-style: solid 
+	border-color: #4aaaa5;
+	border-width: 5px 0px 0px 0px;
+}
+
+footer p {
+	text-align: center;
+	font-size: 12px;
+	padding-top: 25px;
+	color: #999;
+}
+
+/*The following lines describe how a link in text will work. */
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: purple; 
+}
+
+a:hover {
+	color: #4aaaa5;
+}
+
+a:active {
+	color: gray;
+	font-weight: bold;
+}
+
+/* The following styles the portfolio page. */
+
+#left-portfolio {
+	clear: both;
+	background: #ffffff;
+	margin: 40px 20px 20px 20px;
+	padding: 20px;
+	position: absolute;
+	top: 80px;
+	left: 60px;
+	width: 40%;
+	font-size: 18px;
+	border: solid #dddddd 1px
+}
+
+#left-portfolio h1 {
+	font-size: 25px;
+	font-weight: bold;
+	color: #4aaaa5;
+	font-family: Georgia;
+}
+
+/* PROBLEM: Despite that the code is identical for #images 1-5, for some reason the teal banner on #image-5 looks like it has more bottom padding. */
+
+#image-1, #image-2, #image-3, #image-4, #image-5 {
+	height: 100px;
+	width: 125px;
+	float: left;
+	margin: 5px 5px 10px 5px;
+}
+
+#image-1 {
+	background-image: url("http://lorempixel.com/output/abstract-q-c-200-200-1.jpg");
+}
+
+#image-2 {
+	background-image: url("http://lorempixel.com/output/abstract-q-c-200-200-2.jpg");
+}
+
+#image-3 {
+	background-image: url("http://lorempixel.com/output/abstract-q-c-200-200-3.jpg");
+}
+
+#image-4 {
+	background-image: url("http://lorempixel.com/output/abstract-q-c-200-200-4.jpg");
+}
+
+#image-5 {
+	background-image: url("http://lorempixel.com/output/abstract-q-c-200-200-5.jpg");
+}
+
+#image-1 h3, #image-2 h3, #image-3 h3, #image-4 h3, #image-5 h3 {
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	background: #4aaaa5;
+	position: relative;
+	top: 65px;
+	padding: 5px;
+}
+
+/* The following lines style the contact page. */
+
+#left-contact h1 {
+	font-size: 25px;
+	font-weight: bold;
+	color: #4aaaa5;
+	font-family: Georgia;
+}
+
+#left-contact {
+	clear: both;
+	background: #ffffff;
+	margin: 40px 20px 20px 20px;
+	padding: 20px;
+	position: absolute;
+	top: 80px;
+	left: 60px;
+	width: 40%;
+	font-size: 18px;
+	border: solid #dddddd 1px
+}
+
+#left-contact p {
+	font-family: Arial;
+	padding: 3px 0px 3px 0px;
+	font-size: 14px;
+}
