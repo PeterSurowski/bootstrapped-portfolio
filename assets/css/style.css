@@ -79,11 +79,6 @@ body {
 	color: #4aaaa5;
 }
 
-#menu a:active {
-	color: gray;
-	font-weight: bold;
-}
-
 #left-home {
 	clear: both;
 	background: #ffffff;
